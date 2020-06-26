@@ -1,1 +1,36 @@
 The current folder only contains essential functions. Time series data will be released soon. 
+
+NOTE: the directary and variable names need to be changed for custom use.
+Contact: Yusi Chen, cyusi@ucsd.edu 
+
+Two Main scripts: 
+	Funstions/Shuffle_human.m
+		MAIN script comparing FC and SC
+	Functions/Main_SM.m
+		MAIN script comparing FC network properties to subject measurements (SM)
+
+Pre-processing scripts:
+	Functions/mri_model_human.m:
+		To estimate the five FC matrices in the paper
+	Functions/BackReconstr_human_v2.m
+		Backward Reconstructions of neural signals
+	Functions/Deconv.m
+		Blind deconvolution of BOLD signals
+	Functions/PSDShuffle_human_bootstrap.m
+		Generation of surrogate dataset
+	Functions/boot_stat.m
+		Get the significance level of the connections
+	Functions/AR_fit.m
+		Fit the AR model of empirical datasets
+
+Other 3rd party packages used in the analysis and references
+	Functions/inexact_alm_rpca:
+		Lin, Z., Chen, M., & Ma, Y. (2010). The augmented lagrange multiplier method for exact recovery of corrupted low-rank matrices. arXiv preprint arXiv:1009.5055.
+	Functions/2019_03_03_BCT:
+		https://sites.google.com/site/bctnet/
+	Functions/rsHRF-master:
+		Wu, Guo-Rong, et al. "A blind deconvolution approach to recover effective connectivity brain networks from resting state fMRI data." Medical image analysis 17.3 (2013): 365-374.
+	Functions/powerlaws_full_v0.0.10-2012-01-17
+		http://tuvalu.santafe.edu/~aaronc/powerlaws/
+	Functions/spm12
+		https://www.fil.ion.ucl.ac.uk/spm/
