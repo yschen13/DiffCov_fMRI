@@ -12,6 +12,7 @@ Two Main scripts:
 Pre-processing scripts:
 	Functions/mri_model_human.m:
 		To estimate the five FC matrices in the paper
+		Supporting function: regC2.m
 	Functions/BackReconstr_human_v2.m
 		Backward Reconstructions of neural signals
 	Functions/Deconv.m
